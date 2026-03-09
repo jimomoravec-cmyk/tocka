@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZKOUŠENÍČKO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ZKOUŠENÍČKO</h1>
+        <div class="glass-panel input-section">
+            <input type="text" id="nameInput" placeholder="Enter name">
+            <button id="addName">Add Name</button>
+        </div>
+        <div class="wheel-section">
+            <div id="pointer"></div>
+            <canvas id="wheelCanvas" width="400" height="400"></canvas>
+        </div>
+        <button id="spinButton" class="spin-btn glass-btn">Spin</button>
+        <div class="glass-panel names-section">
+            <ul id="namesList"></ul>
+        </div>
+    </div>
+    <div id="winnerPopup" class="popup glass-popup">
+        <div class="popup-content">
+            <h2>Winner!</h2>
+            <p id="winnerName"></p>
+            <button id="closePopup" class="glass-btn">Close</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
